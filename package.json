@@ -1,0 +1,31 @@
+{
+  "name": "zoservices",
+  "version": "0.1.0",
+  "description": "A JSON RPC 2.0 Server Implementation for NodeJS",
+  "main": "zoServices.js",
+  "contributors": [
+  	{
+  		"name": "Diego Resendez",
+  		"email": "diego.resendez@zero-oneit.com"
+  	}
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+  },
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/zerooneit/zoServices-JS"
+  },
+  "keywords": [
+    "json rpc",
+    "json",
+    "rpc", "services"
+  ],
+  "author": "Zero One iT Desarrollos <support@zero-oneit.com>",
+  "dependencies":{
+  	"q"	 : "*",
+  	"underscore" : "*"
+  },
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
