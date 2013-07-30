@@ -18,6 +18,13 @@
   	"type": "git",
   	"url": "https://github.com/zerooneit/zoservice-node"
   },
+  "bugs":{
+  	"url": "https://github.com/zerooneit/zoservice-node/issues",
+  	"email": "support@zero-oneit.com"
+  },
+  "directories":{
+  	"lib":"./lib"
+  },
   "keywords": [
     "json rpc",
     "json",
@@ -30,7 +37,7 @@
   },
   "license": {
     "type": "Apache v2.0",
-    "url":""
+    "url":"https://github.com/zerooneit/zoservice-node/blob/master/LICENSE-2.0.txt"
   },
   "readmeFilename": "README.md"
 }
