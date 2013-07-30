@@ -1,6 +1,6 @@
 {
   "name": "zoservices",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JSON RPC 2.0 Server Implementation for NodeJS",
   "main": "zoServices.js",
   "contributors": [
