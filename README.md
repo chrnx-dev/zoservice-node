@@ -1,4 +1,4 @@
-zoServices
+zoServices [![Build Status](https://travis-ci.org/zerooneit/zoservice-node.png?branch=master)](https://travis-ci.org/zerooneit/zoservice-node)
 =============
 This Project is as implementation for [JSON RPC v2.0 Spec](http://www.jsonrpc.org/specification) written in Javascript for [node.js](http://nodejs.org/), this helps for implements and usage methods that is in another server, system, programming languages or platform.
 This is Helpful for  transport data without implements  modules or program in other languages.
