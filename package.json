@@ -33,7 +33,9 @@
   "author": "Zero One iT Desarrollos <support@zero-oneit.com>",
   "dependencies":{
   	"q"	 : "*",
-  	"underscore" : "*"
+  	"underscore" : "*",
+	"requirejs" : "*",
+	"amdefine": ">=0.1.0"
   },
   "license": {
     "type": "Apache v2.0",

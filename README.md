@@ -1,6 +1,6 @@
 zoServices
 =============
-This Project is as implementation for [JSON RPC v2.0 Spec](http://www.jsonrpc.org/specification) written in Javascript for [node.js](http://nodejs.org/), this helps for implements and usage methods that is in another server, system, programming languages or platform. 
+This Project is as implementation for [JSON RPC v2.0 Spec](http://www.jsonrpc.org/specification) written in Javascript for [node.js](http://nodejs.org/), this helps for implements and usage methods that is in another server, system, programming languages or platform.
 This is Helpful for  transport data without implements  modules or program in other languages.
 
 ##Install
@@ -15,11 +15,11 @@ Install the latest version of _zoServices_ by executing `npm install zoservices`
 -  Fix Error as a correct form JSON RPC object.
 -  Multiple Server can be created at the same time.
 -  Servers can share the same response classes.
-  
+
 
 ##Usage
 
-To start using this project just need add _zoServices_ by adding `require('zoService');` to your project.
+To start using this project just need add _zoServices_ by adding `require('zoservices');` to your project.
 
 ###Server Options
 `Server.port` - Modify the port where server listen the request, by default the value of this options is _3000_.
@@ -35,22 +35,22 @@ To start using Response classes you must create `main` class into the `responses
 ```javascript
 (function($){
   var main = function(settings){
-		
+
 		settings = settings || {};
 		var self = {}
 		self.response = {};
 		u.extend(self, settings);
-		
-		
-		
+
+
+
 		self.helloWorld = function(){
 			return 'Hello World!!';
 		}
-		
+
 		self.doNotification = function(){
 			console.log('user do a notification');
 		}
-		
+
 		self.paramMethod = function (a,b,c){
 			return 'a is ' + a + ' | b is ' + b + ' | c is ' + c;
 		}
@@ -79,7 +79,7 @@ To make a request to the server is using the `POST` method and sending well form
   "method":"<methodName | className.methodName>",
   "jsonrpc":"2.0",
   "params":<[arg1, arg2.. argn] | {"argName1": argValue1, ... "argNamen":argValuen}>
-}, {..request..},..  
+}, {..request..},..
 ]
 ```
 * `id` - This is the unique identification for request.
@@ -89,14 +89,14 @@ To make a request to the server is using the `POST` method and sending well form
 * `params` - you can use an array of parameters or using a object with 'key:value' to assign a parameter.
 
 ### Notification
-In [JSON RPC v2.0 Spec](http://www.jsonrpc.org/specification) notification won't response anything to clients, 
+In [JSON RPC v2.0 Spec](http://www.jsonrpc.org/specification) notification won't response anything to clients,
 _zoServices_ will response with a empty response to indicates to client that server finish the request and is ready
 for another one.
 
 
 ###Create a sigle server
 ```javascript
-var server = require('zoService');
+var server = require('zoservices');
 
 /**
  * Create a new Server
