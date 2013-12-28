@@ -1,7 +1,10 @@
 node_js:
-    - '0.8'
-    - '0.10'
+  - '0.10'
+branches:
+  only:
+    - master
 script:
   - 'npm install'
 notifications:
   email: false
+
